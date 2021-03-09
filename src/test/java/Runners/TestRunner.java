@@ -46,7 +46,7 @@ public class TestRunner {
     @BeforeTest
     @Parameters({"BROWSER", "USER"})
 
-    public void setUp(@Optional("FIRE_FOX") String browser, @Optional("STANDARD") String user) {
+    public void setUp(@Optional("CHORME") String browser, @Optional("STANDARD") String user) {
         if (browser.equals(Constants.CHROME)) driver = new ChromeDriver();
         else if (browser.equals(Constants.FIRE_FOX)) driver = new FirefoxDriver();
         else if (browser.equals(Constants.EDGE)) driver = new EdgeDriver();
